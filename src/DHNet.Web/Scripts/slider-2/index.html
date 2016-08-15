@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slider</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/slider.js"></script>
+</head>
+<body>
+	<div class="slider">
+		<div class="ul-box">
+			<ul>
+				<li><a href="javascript:;"><img src="img/1.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/2.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/3.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/4.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/5.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/6.jpg"/></a></li>
+			</ul>
+		</div>
+		<div class="mask"></div>
+		<div class="prev"><img src="img/btn_l.png"/></div>
+		<div class="next"><img src="img/btn_r.png"/></div>
+	</div>
+	<script>
+		$('.slider').slider({
+			width : 640,  
+			height : 270,   
+			during : 2000, //动画执行间隔
+			speed : 500,   //动画速度
+			btnSize : 20,  //底部遮罩层的按钮大小
+			btnSpace : 10, //底部的按钮间隙
+			direction : 1  //轮播方向默认为1，图片向左移动
+		});
+	</script>
+</body>
+</html>
