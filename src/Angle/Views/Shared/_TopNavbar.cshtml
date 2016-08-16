@@ -14,6 +14,7 @@
    <!-- END navbar header-->
    <!-- START Nav wrapper-->
    <div class="nav-wrapper">
+
       <!-- START Left navbar-->
       <ul class="nav navbar-nav">
          <li>
@@ -45,8 +46,23 @@
       <!-- END Left navbar-->
       <!-- START Right Navbar-->
       <ul class="nav navbar-nav navbar-right">
-         <!-- Search icon-->
-         <li>
+          <li class="dropdown dropdown-list">
+              <a href="#" data-toggle="dropdown">
+                  <em class="icon-globe"></em>
+
+              </a>
+              <ul role="menu" class="dropdown-menu dropdown-menu-right animated fadeInUpShort">
+                  <li>
+                      <a href="#" data-set-lang="en">English</a>
+                  </li>
+                  <li>
+                      <a href="#" data-set-lang="es">Spanish</a>
+                  </li>
+              </ul>
+          </li>
+
+              <!-- Search icon-->
+        <li>
             <a href="#" data-search-open="">
                <em class="icon-magnifier"></em>
             </a>
